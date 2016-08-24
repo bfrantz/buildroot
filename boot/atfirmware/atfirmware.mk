@@ -63,6 +63,7 @@ endef
 
 define ATFIRMWARE_INSTALL_IMAGES_CMDS
 	cp -dpf $(@D)/build/$(ATFIRMWARE_PLATFORM)/release/*.bin $(BINARIES_DIR)/ ;
+	cp -dbf $(@D)/build/$(ATFIRMWARE_PLATFORM)/release/bl31/*elf $(BINARIES_DIR)/ ;
 endef
 
 # Configuration ckeck
